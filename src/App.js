@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import logo from './logo-epsor-normal.svg';
 import Challenge from './Challenge';
 import './style/style.css';
+import './style/normalize.css';
+import './style/skeleton.css';
+
 
 
 class App extends React.Component {
