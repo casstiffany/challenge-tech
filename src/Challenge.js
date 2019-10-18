@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
+import { HashLink as Link } from 'react-router-hash-link';
 import * as Yup from 'yup';
 
 
@@ -34,8 +35,8 @@ class Challenge extends React.Component {
     >
       {({ values, errors, touched, handleChange, handleBlur,}) => (
  
-    	<form className="centerpage">
-      			<div>
+    	<form>
+      			<div className="centerpage">
   
       					<p>Quelle est votre meilleure adresse e-mail ?</p>
       					<input 
@@ -48,9 +49,12 @@ class Challenge extends React.Component {
                             onBlur={handleBlur}
       					/>
                 <div className="errorMessage">{errors.email && touched.email && errors.email}</div>
+                { values.email.length >= 4 &&
+                  <Link to="/challenge#q2"><button>Valider</button></Link>
+                }
                 </div>
 
-      			<div id ="q2">
+      			<div id ="q2" className="centerpage">
       					<p>Quel est le super nom de votre entreprise ?</p>
       					<input 
       						className ="six columns" 
@@ -63,8 +67,11 @@ class Challenge extends React.Component {
       					/> 
 
                <div className="errorMessage">{errors.name && touched.name && errors.name}</div>
+               { values.name.length >= 4 &&
+               <Link to="/challenge#q3"><button id="button-2">Valider</button></Link>
+      		   }
             </div>
-      			<div id="q3" >
+      			<div id="q3" className="centerpage">
       					<p>Combien de salariés compte votre entreprise ?</p>
       					<input 
       						className ="six columns" 
@@ -76,8 +83,11 @@ class Challenge extends React.Component {
 							onBlur={handleBlur}
       					/> 
                 <div className="errorMessage">{errors.employee && touched.employee && errors.employee}</div>
+            	{ values.employee >= 1000 &&
+                 <Link to="/challenge#q4"><button id="button-3">Valider</button></Link>
+      			}
             </div>
-      			<div id="q4">
+      			<div id="q4" className="centerpage">
       					<p>Qui est votre prestataire actuel ?</p>
       					<input 
       						className ="six columns" 
