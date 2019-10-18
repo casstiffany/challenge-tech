@@ -44,7 +44,7 @@ onKeyPress(event) {
     	<form onKeyPress={this.onKeyPress}>
       			<div className="centerpage">
   
-      					<p>Quelle est votre meilleure adresse e-mail ?</p>
+      					<p>Quelle est votre <span className="hightlight">meilleure adresse e-mail</span> ?</p>
       					<input 
       						className ="six columns" 
       						type="email"
@@ -61,7 +61,7 @@ onKeyPress(event) {
                 </div>
 
       			<div id ="q2" className="centerpage">
-      					<p>Quel est le super nom de votre entreprise ?</p>
+      					<p>Quel est le <span className="hightlight">super nom</span> de votre entreprise ?</p>
       					<input 
       						className ="six columns" 
       						type="text" 
@@ -78,7 +78,7 @@ onKeyPress(event) {
       		   }
             </div>
       			<div id="q3" className="centerpage">
-      					<p>Combien de salariés compte votre entreprise ?</p>
+      					<p>Combien de <span className="hightlight">salariés</span> compte votre entreprise ?</p>
       					<input 
       						className ="six columns" 
       						type="number"
@@ -94,7 +94,7 @@ onKeyPress(event) {
       			}
             </div>
       			<div id="q4" className="centerpage">
-      					<p>Qui est votre prestataire actuel ?</p>
+      					<p>Qui est votre <span className="hightlight">prestataire actuel</span> ?</p>
       					<input 
       						className ="six columns" 
       						type="text" 

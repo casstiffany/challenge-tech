@@ -27,3 +27,17 @@ html{
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
+
+p { 
+  color: #5e6488;
+  font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; 
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.hightlight { 
+  color:#A1D4F0; 
+  font-weight: 500;
+}
+
+
