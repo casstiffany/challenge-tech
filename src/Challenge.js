@@ -24,6 +24,12 @@ const validationSchema = Yup.object().shape({
 class Challenge extends React.Component {
 
 
+onKeyPress(event) {
+    if (event.which === 13) {
+      event.preventDefault();
+    }
+  }
+
   render(){
 
 
@@ -35,7 +41,7 @@ class Challenge extends React.Component {
     >
       {({ values, errors, touched, handleChange, handleBlur,}) => (
  
-    	<form>
+    	<form onKeyPress={this.onKeyPress}>
       			<div className="centerpage">
   
       					<p>Quelle est votre meilleure adresse e-mail ?</p>
