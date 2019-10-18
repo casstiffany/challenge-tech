@@ -11,12 +11,12 @@ class Challenge extends React.Component {
     return (
 
  
-    	<form>
+    	<form className="centerpage">
       			<div>
   
       					<p>Quelle est votre meilleure adresse e-mail ?</p>
       					<input 
-      						className ="" 
+      						className ="six columns" 
       						type="email"
       						name="email" 
       						placeholder = "contact@amoureuxduvoyage.com"
@@ -27,7 +27,7 @@ class Challenge extends React.Component {
       			<div id ="q2">
       					<p>Quel est le super nom de votre entreprise ?</p>
       					<input 
-      						className ="" 
+      						className ="six columns" 
       						type="text" 
       						name="name"
                    			id="name"
@@ -38,7 +38,7 @@ class Challenge extends React.Component {
       			<div id="q3" >
       					<p>Combien de salariés compte votre entreprise ?</p>
       					<input 
-      						className ="" 
+      						className ="six columns" 
       						type="number"
       						name="employee" 
                   			id="employee"
@@ -48,7 +48,7 @@ class Challenge extends React.Component {
       			<div id="q4">
       					<p>Qui est votre prestataire actuel ?</p>
       					<input 
-      						className ="" 
+      						className ="six columns" 
       						type="text" 
       						name="competitor"
                   			id="competitor"

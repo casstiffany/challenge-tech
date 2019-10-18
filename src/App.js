@@ -27,13 +27,13 @@ class App extends React.Component {
 }
 
 const Home = () => (
-     <header className="">
+     <header className="centerpage">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Challenge Tech par Cassandra-Tiffany
           </p>
           <Link to='/challenge'>
-              <button className="">Découvrir</button>
+              <button className="button-primary">Découvrir</button>
           </Link>
       </header>
 );
